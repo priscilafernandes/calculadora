@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+  "result"
+  "buttons";
+  padding: 20px 30px 30px 30px;
+  font-family: "Roboto", sans-serif;
+}
+
+.result {
+  grid-area: result;
+  justify-self: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: end;
+  align-items: end;
+  width: 230px;
+  padding: 10px;
+  height: 150px;
+}
+
+.result__text {
+  
+}
+
+.btn {
+  grid-area: buttons;
+  justify-self: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  align-self: center;
+  grid-template-areas: 
+    "btnC btnDel btnPercent btnDivider"
+    "btn7 btn8 btn9 btnMultiply"
+    "btn4 btn5 btn6 btnSubstract"
+    "btn1 btn2 btn3 btnSum"
+    "btnE btn0 btnDot btnEqual";
+  border-top: solid 1px #dcdcdc;
+}
+
+.btn button {
+  background-color: #fff;
+  border: none;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.btn button:hover {
+  color: orangered;
+}
+
+.btn .btn--highlight {
+  color: orangered;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.btn .btn--highlight:hover {
+  color: #000;
+}
+
+.btn button:nth-child(1) {
+  grid-area: btnC;
+}
+
+.btn button:nth-child(2) {
+  grid-area: btnDel;
+}
+
+.btn button:nth-child(3) {
+  grid-area: btnPercent;
+}
+
+.btn button:nth-child(4) {
+  grid-area: btnDivider;
+}
+
+.btn button:nth-child(5) {
+  grid-area: btn7;
+}
+
+.btn button:nth-child(6) {
+  grid-area: btn8;
+}
+
+.btn button:nth-child(7) {
+  grid-area: btn9;
+}
+
+.btn button:nth-child(8) {
+  grid-area: btnMultiply;
+}
+
+.btn button:nth-child(9) {
+  grid-area: btn4;
+}
+
+.btn button:nth-child(10) {
+  grid-area: btn5;
+}
+
+.btn button:nth-child(11) {
+  grid-area: btn6;
+}
+
+.btn button:nth-child(12) {
+  grid-area: btnSubstract;
+}
+
+.btn button:nth-child(13) {
+  grid-area: btn1;
+}
+
+.btn button:nth-child(14) {
+  grid-area: btn2;
+}
+
+.btn button:nth-child(15) {
+  grid-area: btn3;
+}
+
+.btn button:nth-child(16) {
+  grid-area: btnSum;
+}
+
+.btn button:nth-child(17) {
+  grid-area: btnE;
+}
+
+.btn button:nth-child(18) {
+  grid-area: btn0;
+}
+
+.btn button:nth-child(19) {
+  grid-area: btnDot;
+}
+
+.btn button:nth-child(20) {
+  grid-area: btnEqual;
+  background-color: orangered;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.btn button:nth-child(20):hover {
+  background-color: #000;
+  color: orangered;
+}
